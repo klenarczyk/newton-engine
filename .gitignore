@@ -182,7 +182,6 @@ $RECYCLE.BIN/
 *.lnk
 
 ## Linux
-*~
 .fuse_hidden*
 .directory
 .Trash-*
