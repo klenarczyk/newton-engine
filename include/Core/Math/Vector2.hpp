@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace nwtn::Math {
+namespace nwtn {
 
     /**
     * @brief A 2D vector class.
