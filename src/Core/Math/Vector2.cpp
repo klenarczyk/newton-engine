@@ -95,6 +95,11 @@ namespace nwtn {
         return (v1.x * v2.y) - (v1.y * v2.x);
     }
 
+    void Vector2::invert(){
+        x = -x;
+        y = -y;
+    }
+
 // Utility Methods
     std::string Vector2::toString() const {
         return "Vector2(" + std::to_string(x) + ", " + std::to_string(y) + ")";

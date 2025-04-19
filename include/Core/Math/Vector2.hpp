@@ -27,6 +27,7 @@ namespace nwtn {
         float length() const;
         float lengthSquared() const;
         void normalize();
+        void invert();
 
         // Static methods
         static float distance(const Vector2& v1, const Vector2& v2);
