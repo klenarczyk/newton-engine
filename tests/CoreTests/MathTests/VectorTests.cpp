@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "../../../include/Core/Math/Vector2.hpp"
 
-using namespace nwtn::Math;
+using namespace nwtn;
 
 TEST(Vector2Tests, AdditionOfTwoVectors) {
     Vector2 v1(1.0f, 2.0f);
