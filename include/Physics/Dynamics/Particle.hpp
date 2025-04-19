@@ -32,12 +32,12 @@ namespace nwtn {
         float getInverseMass() const { return inverseMass; }
         float getMass() const;
         void setPosition(const Vector2& newPosition) { position = newPosition; }
-        void setPosition(float x, float y) { position.setX(x); position.setY(y); }
+        void setPosition(float x, float y) { position.x = x; position.y = y; }
         void setVelocity(const Vector2& newVelocity) { velocity = newVelocity; }
-        void setVelocity(float x, float y) { velocity.setX(x); velocity.setY(y); }
+        void setVelocity(float x, float y) { velocity.x = x; velocity.y = y; }
         void setAcceleration(const Vector2& newAcceleration) { acceleration = newAcceleration; }
-        void setAcceleration(float x, float y) { acceleration.setX(x); acceleration.setY(y); }
-        void setDamping(float newDamping) { damping = newDamping; }
+        void setAcceleration(float x, float y) { acceleration.x = x; acceleration.y = y; }
+        void setDamping(float newDamping);
         void setInverseMass(float newInverseMass) { inverseMass = newInverseMass; }
         void setMass(float mass);
     };
