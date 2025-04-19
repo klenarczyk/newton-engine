@@ -5,11 +5,8 @@ using namespace nwtn;
 
 void EulerIntegrator::integrate(Particle& particle, float deltaTime) {
     if (deltaTime <= 0.0f) return;
-
-    Vector2 newVelocity = particle.getVelocity() + (particle.getAcceleration() * deltaTime);
-
-    // Apply damping
-    newVelocity *= std::pow(particle.getDamping(), deltaTime);
+    // equation v' = v*d^t + at with damping given as d^t
+    Vector2 newVelocity = particle.getVelocity()*std::pow(particle.getDamping(), deltaTime) + (particle.getAcceleration() * deltaTime);
 
     // Update position (acceleration omitted because of small deltaTime)
     Vector2 newPosition = particle.getPosition() + (newVelocity * deltaTime);
