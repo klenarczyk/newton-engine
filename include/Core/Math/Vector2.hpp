@@ -10,19 +10,12 @@ namespace nwtn {
     */
 
     class Vector2 {
-    private:
+    public:
         float x, y;
 
-    public:
         // Constructors
         Vector2() : x(0), y(0) {};
         Vector2(float x, float y) : x(x), y(y) {};
-
-        // Getters and Setters
-        float getX() const { return x; }
-        float getY() const { return y; }
-        void setX(float new_x) { x = new_x; }
-        void setY(float new_y) { y = new_y; }
 
         // Operators
         Vector2& operator+=(const Vector2& other);
@@ -51,6 +44,7 @@ namespace nwtn {
     Vector2 operator*(const Vector2& v, float scalar);
     Vector2 operator*(float scalar, const Vector2& v);
     Vector2 operator/(const Vector2& v, float scalar);
+    bool operator==(const Vector2& v1, const Vector2& v2);
 }
 
 #endif //NEWTON_ENGINE_Vector2_HPP
