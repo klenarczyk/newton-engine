@@ -2,13 +2,15 @@
 
 using namespace nwtn;
 
-void ParticleDrag::updateForce(Particle* particle, float duration) {
-    Vector2 force = particle->getVelocity();
-    float dragCoeff = force.length();
-    dragCoeff = (k1 + k2 * dragCoeff) * dragCoeff;
+void ParticleDrag::updateForce(Particle* particle) {
+    if (particle->getVelocity().isZero()) {
+        return;
+    }
 
-    // Normalize and apply the drag force
-    force.normalize();
-    force *= -dragCoeff;
-    particle->addForce(force);
+    Vector2 v = particle->getVelocity();
+    float speed = v.length();
+
+    Vector2 drag = -v.normalized() * speed * (k1 + k2 * speed);
+
+    particle->addForce(drag);
 }

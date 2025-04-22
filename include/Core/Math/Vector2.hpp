@@ -27,6 +27,8 @@ namespace nwtn {
         float length() const;
         float lengthSquared() const;
         void normalize();
+        Vector2 normalized() const;
+        bool isZero() const;
         void invert();
 
         // Static methods

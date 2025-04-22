@@ -11,8 +11,8 @@ void ParticleForceRegistry::remove(Particle* particle, IParticleForceGenerator* 
     }
 }
 
-void ParticleForceRegistry::updateForces(float duration) {
+void ParticleForceRegistry::updateForces() {
     for (const RegistryEntry& entry : registrations) {
-        entry.fg->updateForce(entry.particle, duration);
+        entry.fg->updateForce(entry.particle);
     }
 }

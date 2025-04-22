@@ -2,7 +2,7 @@
 
 using namespace nwtn;
 
-void ParticleGravity::updateForce(Particle* particle, float duration) {
+void ParticleGravity::updateForce(Particle* particle) {
     // Check if the particle has infinite mass
     if (particle->getInverseMass() == 0) { return; }
 

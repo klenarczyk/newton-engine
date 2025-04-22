@@ -83,6 +83,18 @@ namespace nwtn {
         y /= len;
     }
 
+    Vector2 Vector2::normalized() const {
+        float len = length();
+        if (len == 0) {
+            throw std::invalid_argument("Cannot normalize a zero-length vector");
+        }
+        return Vector2(x / len, y / len);
+    }
+
+    bool Vector2::isZero() const {
+        return (x == 0 && y == 0);
+    }
+
     float Vector2::distance(const Vector2& v1, const Vector2& v2) {
         return std::sqrt((v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y));
     }

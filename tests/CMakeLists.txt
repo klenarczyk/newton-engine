@@ -1,7 +1,7 @@
 file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS
         "CoreTests/MathTests/*.cpp"
-        "CoreTests/PhysicsTests/*.cpp"
-        "CoreTests/PhysicsTests/IntegratorTests/*.cpp"
+        "PhysicsTests/*.cpp"
+        "PhysicsTests/IntegratorTests/*.cpp"
 )
 
 # Create one test executable

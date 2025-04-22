@@ -14,7 +14,7 @@ namespace nwtn {
         ParticleGravity(const Vector2& gravity) : gravity(gravity) {}
 
         // Override the updateForce method
-        virtual void updateForce(Particle* particle, float duration);
+        virtual void updateForce(Particle* particle);
     };
 }
 

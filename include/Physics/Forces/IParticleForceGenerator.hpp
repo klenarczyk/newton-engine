@@ -10,7 +10,7 @@ namespace nwtn {
         /**
          * @brief Applies the force to the particle.
          */
-        virtual void updateForce(Particle* particle, float duration) = 0;
+        virtual void updateForce(Particle* particle) = 0;
     };
 
 }

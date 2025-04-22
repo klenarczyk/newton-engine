@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "../../../../include/Physics/Integration/EulerIntegrator.hpp"
-#include "../../../../include/Physics/Dynamics/Particle.hpp"
+#include "../../../include/Physics/Integration/EulerIntegrator.hpp"
+#include "../../../include/Physics/Dynamics/Particle.hpp"
 
 using namespace nwtn;
 

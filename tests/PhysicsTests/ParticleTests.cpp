@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "../../../include/Physics/Dynamics/Particle.hpp"
-#include "../../../include/Core/Math/Vector2.hpp"
+#include "../../include/Physics/Dynamics/Particle.hpp"
+#include "../../include/Core/Math/Vector2.hpp"
 
 using namespace nwtn;
 

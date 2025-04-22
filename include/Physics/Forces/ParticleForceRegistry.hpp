@@ -26,7 +26,7 @@ namespace nwtn {
         void remove(Particle* particle, IParticleForceGenerator* fg);
         void clear() { registrations.clear(); }
 
-        void updateForces(float duration);
+        void updateForces();
     };
 
 }
