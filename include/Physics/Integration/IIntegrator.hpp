@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_IINTEGRATOR_HPP
-#define NEWTON_ENGINE_IINTEGRATOR_HPP
+#pragma once
 
 #include "../../Physics/Dynamics/Particle.hpp"
 
@@ -12,5 +11,3 @@ namespace nwtn {
     };
 
 }
-
-#endif //NEWTON_ENGINE_IINTEGRATOR_HPP

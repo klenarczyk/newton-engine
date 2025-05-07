@@ -1,5 +1,4 @@
 #include "../../../include/Physics/Forces/ParticleSpring.hpp"
-#include "../../../include/Core/Math/Vector2.hpp"
 #include <cmath>
 
 using namespace nwtn;

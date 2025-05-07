@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_NEWTONENGINE_HPP
-#define NEWTON_ENGINE_NEWTONENGINE_HPP
+#pragma once
 
 #include "Core/Math/Vector2.hpp"
 #include "Physics/Integration/EulerIntegrator.hpp"
@@ -8,5 +7,3 @@
 #include "Physics/Forces/ParticleDrag.hpp"
 #include "Physics/Forces/ParticleGravity.hpp"
 #include "Physics/Forces/ParticleSpring.hpp"
-
-#endif //NEWTON_ENGINE_NEWTONENGINE_HPP

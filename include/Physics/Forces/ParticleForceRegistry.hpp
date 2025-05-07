@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_PARTICLEFORCEREGISTRY_HPP
-#define NEWTON_ENGINE_PARTICLEFORCEREGISTRY_HPP
+#pragma once
 
 #include <vector>
 #include "../Dynamics/Particle.hpp"
@@ -30,5 +29,3 @@ namespace nwtn {
     };
 
 }
-
-#endif //NEWTON_ENGINE_PARTICLEFORCEREGISTRY_HPP

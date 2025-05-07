@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_IPARTICLEFORCEGENERATOR_HPP
-#define NEWTON_ENGINE_IPARTICLEFORCEGENERATOR_HPP
+#pragma once
 
 #include "../Dynamics/Particle.hpp"
 
@@ -14,5 +13,3 @@ namespace nwtn {
     };
 
 }
-
-#endif //NEWTON_ENGINE_IPARTICLEFORCEGENERATOR_HPP

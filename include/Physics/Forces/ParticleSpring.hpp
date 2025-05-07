@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_PARTICLESPRING_HPP
-#define NEWTON_ENGINE_PARTICLESPRING_HPP
+#pragma once
 
 #include "./IParticleForceGenerator.hpp"
 #include "../Dynamics/Particle.hpp"
@@ -28,5 +27,3 @@ namespace nwtn {
     };
 
 }
-
-#endif //NEWTON_ENGINE_PARTICLESPRING_HPP

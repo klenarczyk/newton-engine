@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_EULERINTEGRATOR_HPP
-#define NEWTON_ENGINE_EULERINTEGRATOR_HPP
+#pragma once
 
 #include "IIntegrator.hpp"
 #include <cmath>
@@ -16,5 +15,3 @@ namespace nwtn {
     };
 
 }
-
-#endif //NEWTON_ENGINE_EULERINTEGRATOR_HPP

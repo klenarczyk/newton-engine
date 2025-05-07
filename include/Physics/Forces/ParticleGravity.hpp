@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_PARTICLEGRAVITY_HPP
-#define NEWTON_ENGINE_PARTICLEGRAVITY_HPP
+#pragma once
 
 #include "IParticleForceGenerator.hpp"
 
@@ -17,5 +16,3 @@ namespace nwtn {
         virtual void updateForce(Particle* particle);
     };
 }
-
-#endif //NEWTON_ENGINE_PARTICLEGRAVITY_HPP
