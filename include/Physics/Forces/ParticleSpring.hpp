@@ -8,20 +8,20 @@ namespace nwtn {
     class ParticleSpring : public IParticleForceGenerator {
     private:
         /** Particle at the end of the spring */
-        Particle *other;
+        Particle* other;
 
         float springConstant;
         float restLength;
 
     public:
-        ParticleSpring(Particle *other, float springConstant, float restLength)
+        ParticleSpring(Particle* other, float springConstant, float restLength)
             : other(other), springConstant(springConstant), restLength(restLength) {}
 
-        virtual void updateForce(Particle *particle);
+        void updateForce(Particle *particle) override;
 
         /** Getters & Setters */
-        float getSpringConstant() const { return springConstant; }
-        float getRestLength() const { return restLength; }
+        [[nodiscard]] float getSpringConstant() const { return springConstant; }
+        [[nodiscard]] float getRestLength() const { return restLength; }
         void setSpringConstant(float newSprConst) { this->springConstant = newSprConst; }
         void setRestLength(float newRestLength) { this->restLength = newRestLength; }
     };

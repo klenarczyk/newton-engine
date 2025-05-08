@@ -10,9 +10,9 @@ namespace nwtn {
 
     public:
         // Constructor
-        ParticleGravity(const Vector2& gravity) : gravity(gravity) {}
+        explicit ParticleGravity(const Vector2& gravity) : gravity(gravity) {}
 
         // Override the updateForce method
-        virtual void updateForce(Particle* particle);
+        void updateForce(Particle* particle) override;
     };
 }

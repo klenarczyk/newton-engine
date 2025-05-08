@@ -16,6 +16,6 @@ namespace nwtn {
         ParticleDrag(float k1, float k2) : k1(k1), k2(k2) {}
 
         // Override the updateForce method
-        virtual void updateForce(Particle* particle);
+        void updateForce(Particle* particle) override;
     };
 }
