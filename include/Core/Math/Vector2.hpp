@@ -1,5 +1,4 @@
-#ifndef NEWTON_ENGINE_Vector2_HPP
-#define NEWTON_ENGINE_Vector2_HPP
+#pragma once
 
 #include <string>
 
@@ -22,7 +21,12 @@ namespace nwtn {
         Vector2& operator-=(const Vector2& other);
         Vector2& operator*=(float scalar);
         Vector2& operator/=(float scalar);
+        Vector2 operator+(const Vector2& v2) { return *this += v2; }
+        Vector2 operator-(const Vector2& v2) { return *this -= v2; }
+        Vector2 operator*(float scalar) { return *this *= scalar; }
+        Vector2 operator/(float scalar) { return *this /= scalar; }
         Vector2 operator-() const;
+        bool operator==(const Vector2& v2) const { return (this->x == v2.x && this->y == v2.y); }
 
         float length() const;
         float lengthSquared() const;
@@ -40,14 +44,4 @@ namespace nwtn {
         std::string toString() const;
         void print() const;
     }; // Vector2
-
-    // Non-member operators
-    Vector2 operator+(const Vector2& v1, const Vector2& v2);
-    Vector2 operator-(const Vector2& v1, const Vector2& v2);
-    Vector2 operator*(const Vector2& v, float scalar);
-    Vector2 operator*(float scalar, const Vector2& v);
-    Vector2 operator/(const Vector2& v, float scalar);
-    bool operator==(const Vector2& v1, const Vector2& v2);
 }
-
-#endif //NEWTON_ENGINE_Vector2_HPP
